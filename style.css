@@ -1,0 +1,232 @@
+:root {
+    --Mobile: 375px;
+    --Desk--top: 1440px;
+
+  /* ### Primary */
+
+--Strong-cyan: hsl(172, 67%, 45%);
+
+/* ### Neutral */
+
+--Very-dark-cyan: hsl(183, 100%, 15%);
+--very-Dark-grayish-cyan: hsl(186, 14%, 43%);
+--Dark-grayish-cyan: hsl(184, 14%, 56%);
+--Light-grayish-cyan: hsl(185, 41%, 84%);
+--very-Light-grayish-cyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+
+/* ### Body Copy (form inputs)*/
+
+--Font-size : 24px;
+
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: var(--Light-grayish-cyan);
+    
+    padding: 5% 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::after,*::before {
+    box-sizing: border-box;
+}
+
+.logo {
+  margin:5%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+
+main {
+    background-color: var(--White);
+    border-radius: 18px;
+    padding: max(1.75rem, 1.2vw);
+    display: flex;
+    width: clamp(500px,70%,1440px);
+    margin: 0 auto;
+    
+}
+
+/* white__container */
+.white__container {
+    width: 50%;
+}
+.lebel {
+    color: var(--very-Dark-grayish-cyan);
+    font-size: 13px;
+
+}
+
+
+
+
+.input {
+    position: relative;
+    
+}
+.input__txt {
+    background-color: var(--very-Light-grayish-cyan);
+    border:0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    width:100%;
+    padding:.5rem 1rem;
+    margin-bottom: 1.75rem;
+    text-align: right;
+    color: var(--very-Dark-grayish-cyan);
+    font-size: 1rem;
+    border-radius: 4px;
+    
+}
+
+.input__img {
+    position: absolute;
+    top:12px;
+    left: 10px;
+}
+input[type=text]:focus-visible {
+    border: 1px solid var(--Strong-cyan);
+    outline:0;
+    width: 100%;
+
+}
+/* i well reback */
+.error__input {
+    border: 1px solid red;
+    outline:0;
+    width: 100%;
+}
+.error_pha {
+    color: red ; 
+    font-size: 13px;
+    display: none;
+}
+
+.align_pha {
+    display: flex;
+    justify-content: space-between;
+}
+.select_tip {
+    margin-bottom: 1.75rem;  
+
+}
+.select_tip__btns {
+    display: grid;
+    gap: .75rem;
+    grid-template-columns: repeat(3,1fr);    
+}
+.costum {
+    background-color: var(--very-Light-grayish-cyan);
+    color: var(--very-Dark-grayish-cyan);
+    width: 100%;
+    text-align: center;
+    padding:6% 3%;
+    border: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    border-radius: 4px;
+}
+.tip__btn {
+    padding:6% 3%;
+    background-color: var(--Very-dark-cyan);
+    border: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: var(--very-Light-grayish-cyan);
+    border-radius: 4px;
+
+
+}
+.number_of_people .input{
+    margin-bottom:0;
+}
+
+.active {
+    background-color: var(--Strong-cyan); 
+    color: var(--Very-dark-cyan);
+    padding:6% 3%;
+    border: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+}
+/* grean__container */
+
+.grean__container {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 18px;
+    width: 50%;
+    padding: max(1.75rem, 1.2vw);
+    margin-left: 1.75rem;
+}
+
+.result__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;  
+
+
+}
+.result__container h4 {
+    color: var(--very-Light-grayish-cyan);
+}
+.result__container h5 {
+    color: var(--very-Dark-grayish-cyan);
+}
+
+.result__container h1 {
+    color: var(--Strong-cyan);
+    font-weight: 700;
+
+}
+
+.result_btn {
+    padding: 3.6% 0;
+    background-color: var(--Strong-cyan);
+    border: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: var(--Very-dark-cyan);
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 3.6rem;
+}
+
+@media (max-width: 500px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+      
+    .white__container {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .select_tip__btns {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2,1fr); 
+     
+       
+    }
+
+
+    .grean__container {
+        width: 100%;
+        margin-left:0;
+    }
+
+
+
+}
