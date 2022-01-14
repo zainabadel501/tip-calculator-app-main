@@ -88,7 +88,7 @@ main {
 
 .input__img {
     position: absolute;
-    top:35px;
+    top:10px;
     left: 10px;
 }
 input[type=text]:focus-visible {
@@ -148,7 +148,7 @@ input[type=text]:focus-visible {
     margin-bottom:0;
 }
 
-.active {
+.active:focus-visible {
     background-color: var(--Strong-cyan); 
     color: var(--Very-dark-cyan);
     padding:6% 3%;
