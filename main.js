@@ -33,17 +33,23 @@ var costuminput=$("#custom").blur(()=>{
     }
 });
 
-$(".tip__btn").click(function(){
+$(".tip__btn").click(function(e){
+    e.preventDefault();
     costuminput.val("Custom");
     $(".tip__btn").each( function(){
         $(this).removeClass("active");
     });
     $(this).addClass("active");
-    tip=parseFloat($(this)[0].innerText);
-    tip=tip/100;
-    
-    calculate();
+        tip=parseFloat(this.value);
+        tip=tip/100;
+        calculate();
+        
+       
+   
+
 });
+
+
 
 $(".result_btn").click(function(){
 people=1;

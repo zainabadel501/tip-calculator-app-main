@@ -148,7 +148,7 @@ input[type=text]:focus-visible {
     margin-bottom:0;
 }
 
-.active:focus-visible {
+.active {
     background-color: var(--Strong-cyan); 
     color: var(--Very-dark-cyan);
     padding:6% 3%;
